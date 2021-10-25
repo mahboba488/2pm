@@ -329,7 +329,7 @@ span .head{
 .card-btn{
   border:none;
   outline: none;
-  color: rgb(50, 202, 248);
+  color: #48bf91;
   background-color: #fff;
   padding:16px 20px;
   border-radius: 20px;
@@ -348,7 +348,7 @@ h3{
 }
 
 Span{
-  color: rgb(13, 151, 36);
+  color: #48bf91;
 }
 
 
@@ -407,11 +407,15 @@ Span{
   flex-direction: column;
   justify-content: center;
   width: auto;
-  margin: 5px;
+  margin: 15px;
   box-sizing: border-box;
   box-shadow: 1px 1px 1px 1px rgb(247, 236, 236);
   background: #fff;
   border-radius: 20px;
+
+
+
+  
   
   
 }
@@ -423,7 +427,7 @@ Span{
   flex-direction: column;
   justify-content: center;
   width: auto;
-  margin: 5px;
+  margin: 15px;
   box-sizing: border-box;
   box-shadow: 1px 2px;
   background: #070707;
@@ -488,7 +492,7 @@ input[type="checkbox"]:checked+label::before{
 
 label::after{
   content: "";
-  border: 2px solid #27ae60;
+  border: 2px solid #48bf91;
   width: 12px;
   height: 12px;
   position: absolute;
@@ -512,7 +516,7 @@ label::after{
   border:none;
   outline: none;
   color: #fff;
-  background-color:#00b9a4;
+  background-color:#48bf91;
   padding:16px 20px;
   border-radius: 40px;
   font-size: 16px;
@@ -524,7 +528,7 @@ label::after{
 }
 
 Span{
-  color: rgb(13, 151, 36);
+  color: #48bf91;
 }
 
 
@@ -661,7 +665,7 @@ Span{
   border:none;
   outline: none;
   color: #fff;
-  background-color:#00b9a4;
+  background-color:#48bf91;
   padding:16px 20px;
   border-radius: 40px;
   font-size: 16px;
@@ -750,17 +754,54 @@ ul{
 
 }
 
+#fot{
+  margin-top: 2rem;
+  background:#fff;
+  color:rgb(2, 3, 51) ;
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer-col p{
+    
+    
+  font-weight: 30px;
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 50px;
+  margin: 5px;
+  padding: 5px;
+  
+
+
+
+
+}
+
 
 
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) { 
   .check-left h1{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
     line-height: 50px;
     color: #222;
     margin-bottom: 20px;
     text-align: center;
+  }
+
+  .check-left p{
+    font-weight: 50px;
+    font-size: 15px;
+    color: #000;
+    margin-bottom: 20px;
+    width: 400px;
+    text-align: center;
+  
+  
   }
 
   .contact-map{
@@ -784,102 +825,103 @@ ul{
     color: #000;
     margin-bottom: 20px;
     text-align: center;
-    width: 200px;
+    width: 250px;
   
   
+  }
+
+  .contact-map{
+    height: 250px;
+    flex: 50%;
+    padding: 10px;
   }
 
 
   .contact-btn{
-    display: inline-block;
-    width: 10%;
-    border: none;
+    border:none;
     outline: none;
-    border-radius: 50px;
-    background: #0a8625;
     color: #fff;
-    text-transform: uppercase;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 20px;
-    margin-bottom: 20px;
+    background-color:#48bf91;
+    padding:10px 10px;
+    border-radius: 40px;
+    font-size: 12px;
+    width: 140px;
+    margin-top: 10px;
+    
   }
   
 
-}
-
-@media only screen and (max-width: 576px) { 
-  .check-left h1{
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 50px;
-    color: #222;
-    margin-bottom: 20px;
-    text-align: center;
+  .footer{
+    background-color: #fff;
+    padding: 50px 0;
   }
 
-  .contact-btn{
-    display: inline-block;
-    width: 10%px;
-    border: none;
-    outline: none;
-    border-radius: 50px;
-    background: #0a8625;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 20px;
-    margin-bottom: 5px;
-  }
-
+  .footer-col p{
+    
+    
+      font-weight: 30px;
+      font-size: 20px;
+      color: #000;
+      margin-bottom: 20px;
+      text-align: center;
+      width: 50px;
+      margin: 5px;
+      padding: 5px;
+      
+    
+    
+    
   
-
-}
-
-@media only screen and (max-width: 350px) { 
-
-  .check-left h1{
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 50px;
-    color: #222;
-    margin-bottom: 20px;
-    text-align: center;
   }
 
-  
+  .contact-map{
+    height: 250px;
+    flex: 50%;
+    padding: 30px;
+    margin-bottom:30px ;
+    width: 300px;
+  }
 
-  .contact{
-    width: 40%;
+  .check-container{
+    padding: 20px;
     height: auto;
-    margin: auto;
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
-    border-radius: 10px;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    margin: 15px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px 1px rgb(247, 236, 236);
     background: #fff;
-    box-shadow: 0px 0px 0px 0px #fff;
-  }
-
-  .contact-btn{
-    width: 10%;
-    height: 10%;
-    display: inline-block;
-    padding: 10px 20px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: normal;
-    color: #fff;
-    background-color: #850ee7;
-    text-transform: capitalize;
-    box-shadow: 0px 4px 15px rgba(0, 200, 148, 0.15);
     border-radius: 20px;
+  
+  
+  
+    
+    
+    
   }
 
   
 
+  
+
+  
+
 }
+
+
+
+
+
+  
+
+  
+
+  
+
+
 
 
 
